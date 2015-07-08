@@ -1,4 +1,6 @@
-var Promise = require('es6-promise').Promise;
+import {Promise} from 'bluebird';
+//var Promise = require('es6-promise').Promise;
+// import 'object-assign';
 var assign = require('object-assign');
 
 var _callbacks = [];
@@ -42,4 +44,6 @@ Dispatcher.prototype = assign({}, Dispatcher.prototype, {
   }
 });
 
-module.exports = Dispatcher;
+export default Dispatcher;
+// exports["default"] = Dispatcher;
+// module.exports = exports["default"];
