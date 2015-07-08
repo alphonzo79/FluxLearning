@@ -1,6 +1,6 @@
 var keyMirror = require('keymirror');
 
-export default = keyMirror({
+var TodoConstants = keyMirror({
 	TODO_CREATE: null,
 	TODO_COMPLETE: null,
 	TODO_DESTROY: null,
@@ -9,3 +9,5 @@ export default = keyMirror({
 	TODO_UNDO_COMPLETE: null,
 	TODO_UPDATE_TEXT: null
 });
+
+export default TodoConstants;

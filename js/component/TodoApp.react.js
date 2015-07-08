@@ -11,7 +11,7 @@ function getTodoState() {
 	};
 }
 
-export default TodoApp = React.createClass({
+var TodoApp = React.createClass({
 	getInitialState: function() {
 		return getTodoState();
 	},
@@ -41,3 +41,5 @@ export default TodoApp = React.createClass({
 		this.setState(getTodoState());
 	}
 });
+
+export default TodoApp;

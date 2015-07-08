@@ -2,7 +2,7 @@ var React = require('react');
 var ReactPropTypes = React.PropTypes;
 import TodoActions from '../action/TodoActions';
 
-export default Footer = React.createClass({
+var Footer = React.createClass({
 	propTypes: {
 		allTodos: ReactPropTypes.object.isRequired
 	},
@@ -51,3 +51,5 @@ export default Footer = React.createClass({
 		TodoActions.destroyCompleted();
 	}
 });
+
+export default Footer;

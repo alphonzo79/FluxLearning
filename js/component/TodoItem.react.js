@@ -3,9 +3,9 @@ var ReactPropTypes = React.PropTypes;
 import TodoActions from '../action/TodoActions';
 import TodoTextInput from './TodoTextInput.react';
 
-var cs = require('react/lib/cx');
+var cx = require('react/lib/cx');
 
-export default TodoItem = React.createClass({
+var TodoItem = React.createClass({
 	propTypes: {
 		todo: ReactPropTypes.object.isRequired
 	},
@@ -81,3 +81,5 @@ export default TodoItem = React.createClass({
 		TodoActions.destroy(this.props.todo.id);
 	}
 });
+
+export default TodoItem;

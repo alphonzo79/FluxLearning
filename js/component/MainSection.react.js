@@ -3,7 +3,7 @@ var ReactPropTypes = React.PropTypes;
 import TodoActions from '../action/TodoActions';
 import TodoItem from './TodoItem.react';
 
-export default MainSection = React.createClass({
+var MainSection = React.createClass({
 	propTypes: {
 		allTodos: ReactPropTypes.object.isRequired,
 		areAllComplete: ReactPropTypes.bool.isRequired
@@ -39,3 +39,5 @@ export default MainSection = React.createClass({
 		TodoActions.toggleCompleteAll();
 	}
 });
+
+export default MainSection;

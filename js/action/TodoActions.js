@@ -1,7 +1,7 @@
 import AppDispatcher from '../dispatcher/AppDispatcher';
 import TodoConstants from '../constants/TodoConstants';
 
-export default TodoActions = {
+var TodoActions = {
 	create: function(text) {
 		AppDispatcher.dispatch({
 			actionType: TodoConstants.TODO_CREATE,
@@ -46,3 +46,5 @@ export default TodoActions = {
 		});
 	}
 };
+
+export default TodoActions;

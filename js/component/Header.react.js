@@ -2,7 +2,7 @@ var React = require('react');
 import TodoActions from '../action/TodoActions';
 import TodoTextInput from './TodoTextInput.react';
 
-export default Header = {
+var Header = React.createClass({
 	render: function () {
 		return (
 			<header id="header">
@@ -21,4 +21,6 @@ export default Header = {
 			TodoActions.create(text);
 		}
 	}
-};
+});
+
+export default Header;

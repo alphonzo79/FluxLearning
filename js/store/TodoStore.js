@@ -1,5 +1,5 @@
 import AppDispatcher from '../dispatcher/AppDispatcher';
-import {EventEmitter} from 'events';
+var EventEmitter = require('events');
 import TodoConstants from '../constants/TodoConstants';
 var assign = require('object-assign');
 
