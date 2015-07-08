@@ -17,4 +17,6 @@ var AppDispatcher = assign({}, Dispatcher.prototype, {
 	}
 })
 
-module.exports = AppDispatcher;
+export default AppDispatcher;
+// exports["default"] = AppDispatcher;
+// module.exports = exports["default"];
