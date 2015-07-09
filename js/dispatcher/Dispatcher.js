@@ -17,6 +17,13 @@ Dispatcher.prototype = assign({}, Dispatcher.prototype, {
     _callbacks.push(callback);
     return _callbacks.length - 1;
   },
+  
+  waitFor: function(promiseIndexes, callback) {
+    var selectedPromises = promiseIndexes.map(function(index) {
+      return _promises[index];
+    });
+    return Promise.all(selectedPromises).then(callback);
+  },
 
   /**
    * dispatch
