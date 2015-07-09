@@ -29,7 +29,7 @@ var TodoActions = {
 	
 	toggleCompleteAll: function() {
 		AppDispatcher.dispatch({
-			actionType: TodoConstants.TODO_TOGLE_COMPLETE_ALL
+			actionType: TodoConstants.TODO_TOGGLE_COMPLETE_ALL
 		});
 	},
 	
